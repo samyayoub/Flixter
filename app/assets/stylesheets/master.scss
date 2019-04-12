@@ -30,6 +30,7 @@ h1, h2, h3, h4, h5, h6, .navbar {
 .frosty {
     background: rgba(0, 0, 0, 0.5);
     color: white;
+    border-radius: 15px;
 }
 
 .frosty h1  {
@@ -42,4 +43,20 @@ h1, h2, h3, h4, h5, h6, .navbar {
     font-family: "Helvetica Neue", Helvetica;
     font-weight: 200;
     text-shadow: rgba (0, 0, 0, 0.95) 1px 1px;
+}
+
+.btn    {
+    border-radius: 11px;
+}
+
+.feature    {
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+body    {
+    background: image_url('dust_scratches.png');
+    font-family: 'Hind Guntur', sans-serif;
+    font-weight: 400;
 }
