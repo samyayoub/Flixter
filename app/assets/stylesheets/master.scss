@@ -56,7 +56,15 @@ h1, h2, h3, h4, h5, h6, .navbar {
 }
 
 body    {
-    background: image_url('dust_scratches.png');
+    background: image_url('vintage-concrete.png');
     font-family: 'Hind Guntur', sans-serif;
     font-weight: 400;
+}
+
+.clear  {
+    clear: both;
+}
+
+.search-box {
+    margin: 2em;
 }
