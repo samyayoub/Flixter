@@ -12,63 +12,75 @@
 
   
 <body>
+  <div id="flex-content-container">
 
-  <!-- Top navigation bar -->
-  <nav class="navbar navbar-toggleable-md navbar-light">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+    <!-- Top navigation bar -->
+    <nav class="navbar navbar-toggleable-md navbar-light">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-      <%= link_to 'flixter', root_path, class: 'navbar-brand' %>
-      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#">Disabled</a>
-        </li>
-      </ul>
-      
-      <ul class="navbar-nav">
-        <% if user_signed_in? %>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <%= link_to 'flixter', root_path, class: 'navbar-brand' %>
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
           <li class="nav-item">
-            <%= link_to 'Sign Out', destroy_user_session_path, method: :delete, class: 'nav-link' %>
+            <a class="nav-link" href="#">Link</a>
           </li>
-        <% else %>
           <li class="nav-item">
-            <%= link_to 'Sign in', new_user_session_path, method: :GET, class: 'nav-link' %>
+            <a class="nav-link disabled" href="#">Disabled</a>
           </li>
-          <br />
-          <div class="clear"></div>
-          <li class="nav-item">
-            <%= link_to 'Sign up', new_user_registration_path, method: :GET, class: 'nav_link' %>
-          </li>
-        <% end %>
-      </ul>
+        </ul>
+        
+        <ul class="navbar-nav">
+          <% if user_signed_in? %>
+            <li class="nav-item">
+              <%= link_to 'Sign Out', destroy_user_session_path, method: :delete, class: 'nav-link' %>
+            </li>
+          <% else %>
+            <li class="nav-item">
+              <%= link_to 'Sign in', new_user_session_path, method: :GET, class: 'nav-link' %>
+            </li>
+            <br />
+            <div class="clear"></div>
+            <li class="nav-item">
+              <%= link_to 'Sign up', new_user_registration_path, method: :GET, class: 'nav_link' %>
+            </li>
+          <% end %>
+        </ul>
 
-      <div class="clear"></div>
+        <div class="clear"></div>
+        <br />
+            
+
+  <!-- Search Field -->     
+        <form class="form-inline my-2 my-lg-0 search-box">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+
+      </div>
+    </nav>
+
+  <!-- Showing Notice and Alerts only if present -->
+    <% if notice.present? %>
+      <p class="alert alert-info"><%= notice %></p>
+    <% end %>
+    <% if alert.present? %>
+      <p class="alert alert-danger"><%= alert %></p>
+    <% end %>
+
+    <%= yield %>
+    
+  </div>
+
+  <!-- Footer -->
+  <div id="footer">
+    <div class="container">
+      <b>Footer Here</b>
       <br />
-          
-
-<!-- Search Field -->     
-      <form class="form-inline my-2 my-lg-0 search-box">
-        <input class="form-control mr-sm-2" type="text" placeholder="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
-
+      <%= link_to 'Link', '#' %>
     </div>
-  </nav>
-
-<!-- Showing Notice and Alerts only if present -->
-  <% if notice.present? %>
-    <p class="alert alert-info"><%= notice %></p>
-  <% end %>
-  <% if alert.present? %>
-    <p class="alert alert-danger"><%= alert %></p>
-  <% end %>
-
-  <%= yield %>
+  </div>
 
 </body>
 
