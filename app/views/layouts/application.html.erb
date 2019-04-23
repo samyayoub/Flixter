@@ -24,10 +24,7 @@
         <%= link_to 'flixter', root_path, class: 'navbar-brand' %>
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#">Disabled</a>
+            <%= link_to 'See All Courses', courses_path, class: 'nav-link' %>
           </li>
         </ul>
         
@@ -41,10 +38,10 @@
               <%= link_to 'Sign in', new_user_session_path, method: :GET, class: 'nav-link' %>
             </li>
             <br />
-            <div class="clear"></div>
             <li class="nav-item">
               <%= link_to 'Sign up', new_user_registration_path, method: :GET, class: 'nav_link' %>
             </li>
+            <div class="clear" />
           <% end %>
         </ul>
 
