@@ -14,7 +14,6 @@
 <body>
   <div id="flex-content-container">
 
-    <!-- Top navigation bar -->
     <nav class="navbar navbar-toggleable-md navbar-light">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -41,15 +40,10 @@
             <li class="nav-item">
               <%= link_to 'Sign up', new_user_registration_path, method: :GET, class: 'nav_link' %>
             </li>
-            <div class="clear" />
           <% end %>
         </ul>
-
-        <div class="clear"></div>
-        <br />
             
-
-  <!-- Search Field -->     
+ 
         <form class="form-inline my-2 my-lg-0 search-box">
           <input class="form-control mr-sm-2" type="text" placeholder="Search">
           <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
