@@ -6,7 +6,7 @@
 
     <% @courses.each do |course| %>
         <div class="booyah-box">
-            <%= image_tag course.image.url, class: 'img-fluid' %>
+            <%= image_tag course.image.url, class: 'img-fluid center' %>
             <h2 class="text-center">
                 <%= link_to course.title, course_path(course) %>
             </h2>
