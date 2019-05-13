@@ -34,12 +34,12 @@
               <%= link_to 'Sign Out', destroy_user_session_path, method: :delete, class: 'nav-link' %>
             </li>
           <% else %>
+
             <li class="nav-item">
               <%= link_to 'Sign in', new_user_session_path, method: :GET, class: 'nav-link' %>
             </li>
-            <br />
             <li class="nav-item">
-              <%= link_to 'Sign up', new_user_registration_path, method: :GET, class: 'nav_link' %>
+              <%= link_to 'Sign up', new_user_registration_path, method: :GET, class: 'nav-link' %>
             </li>
           <% end %>
         </ul>
