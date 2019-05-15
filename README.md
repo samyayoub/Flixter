@@ -1,9 +1,7 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
+Flixter
+A video streaming platform - a two sided video streaming marketplace platform, featuring credit card payments capabilities, user role management, complex user interfaces and advanced database relationships.
 
 * Ruby version
 
