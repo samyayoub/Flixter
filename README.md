@@ -2,7 +2,8 @@
 A web app for a video streaming platform - a two sided video streaming marketplace platform, featuring credit card payments capabilities, user role management, complex user interfaces and advanced database relationships.
 
 # Getting Started
-Simply visit the web app's website: (flixter-samy-ayoub.herokuapp.com/)
+Simply visit the web app's website: [flixter](flixter-samy-ayoub.herokuapp.com/)
+
 Prerequisites
 What things you need to install the software and how to install them
 
