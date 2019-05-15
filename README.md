@@ -12,10 +12,11 @@ The web app is an online learning platform. You can sign up as a teacher and cre
 
 # Built With
 Ruby on Rails
-HTML
-CSS
-JavaScript - Query
-Ajax
 
-# Creator
-Samy Ayoub
+HTML
+
+CSS
+
+JavaScript - Query
+
+Ajax
