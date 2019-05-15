@@ -1,5 +1,3 @@
-# README
-
 # Flixter
 A video streaming platform - a two sided video streaming marketplace platform, featuring credit card payments capabilities, user role management, complex user interfaces and advanced database relationships.
 
